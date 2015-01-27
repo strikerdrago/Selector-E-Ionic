@@ -1,0 +1,33 @@
+.cardsingle{
+	/*clear:both; */
+	/*height:11em; */
+	/*box-sizing: border-box;*/
+	/*padding: 0.5em 1em 0.5em 1em;*/
+	/*margin-bottom: 0.5em; */
+	/*border: 5px solid #BBBBBB;*/
+	/*margin-right:1em;*/
+	/*display:block;*/
+	/*overflow:auto;*/
+}
+
+/*.list.card{
+	margin-top: 0px;
+}
+*/
+.cardsingle.White{
+	background-color: #FEFEFE;
+	/*border-color: #BBBBBB;*/
+}
+.cardsingle.Green{
+	background-color: #C1FFAB;
+	/*border-color: #BBBBBB;*/
+}
+.cardsingle.Blue{
+	background-color: #ABE2FF;
+}
+.cardsingle.Red{
+	background-color: #FC6868;
+}
+.cardsingle.Black{
+	background-color: #AAAAAA;
+}
