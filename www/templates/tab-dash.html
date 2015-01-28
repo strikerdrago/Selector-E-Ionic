@@ -2,12 +2,42 @@
   <ion-content class="padding">
 
   <!-- start of my cards -->
+      <div class="col-md-0">
+      <!--Sidebar snippet-->
+
+      Search: <input ng-model="query"><br /><p></p>
+	  Card Type: <select ng-model="type">
+		<option value=''></option>
+		<option value=1>LRIG</option>
+		<option value=2>Arts</option>
+		<option value=3>Signi</option>
+		<option value=4>Spell</option>
+		</select>
+	  Color: <select ng-model="color">
+		<option value=''></option>
+		<option value='White'>White</option>
+		<option value='Red'>Red</option>
+		<option value='Blue'>Blue</option>
+		<option value='Green'>Green</option>
+		<option value='Black'>Black</option>
+		<option value='Colorless'>Colorless</option>
+		</select>
+	  Set: <select ng-model="set">
+		<option value=""></option>
+		<option value="wx01">WX01-Served Selector</option>
+		<option value="wx02">WX02-Stirred Selector</option>
+		</select><p></p>
+    </div>
+  
+  
+  
+  
     <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}">
       <div class="item item-divider"></div>
       <div class="item item-body cardsingle {{card.color}}">
       {{card.set}} -
       {{card.number}} |
-          <strong>{{card.name}}</strong>
+           <strong>{{card.name}}</strong>
         <div>
 
           {{card.stat}}<br/>
