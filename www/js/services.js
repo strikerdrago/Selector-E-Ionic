@@ -100,30 +100,35 @@ angular.module('starter.services', [])
   var links = [{
     id: 0,
     name: 'Takara Tomy WIXOSS',
-    notes: 'Enjoys drawing things',
+    notes: 'The official card game site',
     link: 'http://www.takaratomy.co.jp/products/wixoss/',
-    img: 'http://selector-wixoss.com/images/common/banners/bnr_WIXOSS.png'
+    // img: 'http://selector-wixoss.com/images/common/banners/bnr_WIXOSS.png'
+    img: 'https://pbs.twimg.com/profile_images/1061207754/T___normal.gif'
   }, {
     id: 1,
-    name: 'WIXOSS Anime Site',
-    notes: 'Odd obsession with everything',
+    name: 'Selected Infector WIXOSS Anime',
+    notes: 'Site for the anime',
     link: 'http://selector-wixoss.com/',
-    img: 'http://selector-wixoss.com/images/common/banners/bnr_infected.png'
+    // img: 'http://selector-wixoss.com/images/common/banners/bnr_infected.png'
+    img: 'http://selector-wixoss.com/favicon.ico'
   }, {
     id: 2,
-    name: 'Andrew Jostlen',
-    notes: 'Wears a sweet leather Jacket. I\'m a bit jealous',
-    img: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
+    name: 'Tamayorihime',
+    notes: 'BATORU',
+    link: 'http://selector-wixoss.com/',
+    img: 'http://selector-wixoss.com/present/icon06.png'
   }, {
     id: 3,
-    name: 'Adam Bradleyson',
-    notes: 'I think he needs to buy a boat',
-    img: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    name: 'Yuzuki',
+    notes: 'Bro Lover',
+    link: 'http://selector-wixoss.com/',
+    img: 'http://selector-wixoss.com/present/icon04.png'
   }, {
     id: 4,
-    name: 'Perry Governor',
-    notes: 'Just the nicest guy',
-    img: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
+    name: 'Ruuko',
+    notes: 'Just wants to make friends',
+    link: 'http://selector-wixoss.com/',
+    img: 'http://selector-wixoss.com/present/icon01.png'
   }];
 
 
