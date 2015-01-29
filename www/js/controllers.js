@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('HomeCtrl', function($scope) {
   $scope.type = '';
   $scope.color = '';
   $scope.cards = APP.cards;
@@ -19,6 +19,10 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
+.controller('LinksCtrl', function($scope, Links) {
+  $scope.links = Links.all();
+})
+
 .controller('FriendsCtrl', function($scope, Friends) {
   $scope.friends = Friends.all();
 })
@@ -28,6 +32,12 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  };
+})
+
+.controller('AboutCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
   };
