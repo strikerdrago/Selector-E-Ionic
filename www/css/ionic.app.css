@@ -14,6 +14,9 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto; }
+
 .carddivider.White, .cardsingle.White {
   background-color: #FEFEFE; }
 
@@ -44,6 +47,22 @@ select {
 
 .list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
   display: block !important; }
+
+.list.ng-enter, .list.ng-leave {
+  -webkit-transition: 150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all; }
+
+.list.ng-enter {
+  left: 100%; }
+
+.list.ng-enter.ng-enter-active {
+  left: 0; }
+
+.list.ng-leave {
+  left: 0; }
+
+.list.ng-leave.ng-leave-active {
+  left: -100%; }
 
 /*!
   Ionicons, v1.5.2

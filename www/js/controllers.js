@@ -21,10 +21,11 @@ angular.module('starter.controllers', [])
   };
   $scope.isGroupShown = function(card) {
     if (APP.condensed == false){
-       return true;
+      return $scope.shownGroup === card;
+       
     }
     else {
-    return $scope.shownGroup === card;
+      return true;
     }
   }
 

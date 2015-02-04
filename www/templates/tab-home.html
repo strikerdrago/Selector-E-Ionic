@@ -49,8 +49,8 @@
     </div>
 
     <ion-list>
-      <ion-item class="item-toggle">
-        Condensed View
+      <ion-item  class="item-toggle">
+        Expand all
         <label class="toggle">
           <input type="checkbox" ng-model="settings.enableCondensed" ng-change="condenser()">
           <div class="track">
@@ -59,7 +59,7 @@
         </label>
       </ion-item>
     </ion-list>
-    <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}"  >
+    <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}">
       <div class="item item-divider carddivider {{card.color}}" ng-click="toggleGroup(card)" ng-class="{active: isGroupShown(card)}">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
       <div class="item item-body item-accordion cardsingle {{card.color}}" ng-show="isGroupShown(card)">
 <!--       {{card.set}} -
