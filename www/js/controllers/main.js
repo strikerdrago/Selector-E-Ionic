@@ -10,7 +10,7 @@
 
 var whitecolor = '#F0F0F0';
 
-angular.module('selectorE')
+angular.module('starter')
 	.controller('CardListCtrl', function ($scope) {
 	$scope.type = '';
 	$scope.color = '';
