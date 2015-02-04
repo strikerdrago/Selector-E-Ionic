@@ -4,16 +4,42 @@ angular.module('starter.controllers', [])
   $scope.type = '';
   $scope.color = '';
   $scope.cards = APP.cards;
+  $scope.condensed = APP.condensed;
+  $scope.notCondensed = function(){
+    $scope.condense = true;
+  }
+  $scope.isCondensed = "isGroupShown(card)";
+
 
   $scope.toggleGroup = function(card) {
     if ($scope.isGroupShown(card)) {
       $scope.shownGroup = null;
     } else {
       $scope.shownGroup = card;
+
     }
   };
   $scope.isGroupShown = function(card) {
+    if (APP.condensed == false){
+       return true;
+    }
+    else {
     return $scope.shownGroup === card;
+    }
+  }
+
+  $scope.settings = {
+    enableCondensed: APP.condensed
+  }
+
+   $scope.condenser = function() {
+    if (APP.condensed == false) {
+      APP.condensed = true;
+
+    } else{
+      APP.condensed = false;
+    }
+    return APP.condensed;
   }
 })
 
@@ -48,6 +74,16 @@ angular.module('starter.controllers', [])
 
 .controller('AboutCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true
-  };
+    enableCondensed: APP.condensed
+  }
+
+   $scope.condenser = function() {
+    if (APP.condensed == false) {
+      APP.condensed = true;
+
+    } else{
+      APP.condensed = false;
+    }
+    return APP.condensed;
+  }
 });

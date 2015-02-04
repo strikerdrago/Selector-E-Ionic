@@ -206,3 +206,5 @@ APP.cards = [
   ]; // "global"
 
 APP.cardsSelected = []; //add card results to this to show
+
+APP.condensed = false; //whether condensed or not
