@@ -1,7 +1,7 @@
-<ion-view view-title="Home">
-  <ion-nav-title>
+<ion-view title='<img class="title-image title-center" src="img/selectorelogo.png" height = "42" />'>
+<!--   <ion-nav-title>
       <img class src='img/selectorelogo.png' height = "42" />
-  </ion-nav-title>
+  </ion-nav-title> -->
   <ion-content class="padding">
   <!-- start of my cards -->
       <div class="col-md-0">
@@ -32,19 +32,16 @@
     </div>
   
   
-  
-  
-    <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}">
+    <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}"  >
       <div class="item item-divider">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
-      <div class="item item-body cardsingle {{card.color}}">
+      <div class="item item-body cardsingle {{card.color}} ng-click="toggleGroup(group)"
+          ng-class="{active: isGroupShown(group)}"">
 <!--       {{card.set}} -
       {{card.number}} |
            <strong>{{card.name}}</strong> -->
-        <div>
-
-          {{card.stat}}<br/>
-          {{card.cardText}}
+        <div>{{card.stat}}<br/>
         </div>
+          {{card.cardText}}
       </div>
     </div>
 <!-- end of my cards -->

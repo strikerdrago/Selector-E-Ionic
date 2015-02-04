@@ -38,6 +38,33 @@ $positive:                        #3366FF !default;
 	background-color: #EEEEEE;
 }
 
+// .cardsingle{
+// 	clear:both; 
+// 	height:11em; 
+// 	box-sizing: border-box;
+// 	padding: 0.5em 1em 0.5em 1em;
+// 	margin-bottom: 0.5em; 
+// 	border: 5px solid #BBBBBB;
+// 	margin-right:1em;
+// 	display:block;
+// 	overflow:auto;
+// }
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+  overflow: auto;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 

@@ -32,6 +32,19 @@ $dark:                            #444 !default;
 .cardsingle.Colorless {
   background-color: #EEEEEE; }
 
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+  overflow: auto; }
+
+.list .item.item-accordion.ng-hide {
+  line-height: 0px; }
+
+.list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
+  display: block !important; }
+
 /*!
   Ionicons, v1.5.2
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
