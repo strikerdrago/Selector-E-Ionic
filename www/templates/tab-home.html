@@ -62,24 +62,11 @@
     <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}">
       <div class="item item-divider carddivider {{card.color}}" ng-click="toggleGroup(card)" ng-class="{active: isGroupShown(card)}">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
       <div class="item item-body item-accordion cardsingle {{card.color}}" ng-show="isGroupShown(card)">
-<!--       {{card.set}} -
-      {{card.number}} |
-           <strong>{{card.name}}</strong> -->
         <div >{{card.stat}}<br/>
         </div>
           {{card.cardText}}
       </div>
     </div>
-<!-- end of my cards -->
-
-<!--     <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
-      </div>
-    </div> -->
     
   </ion-content>
 </ion-view>
