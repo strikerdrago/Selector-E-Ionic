@@ -1,13 +1,13 @@
-<ion-view view-title=""  animation="fade-in-out">
+<ion-view view-title="Home">
   <ion-nav-title>
       <img class src='img/selectorelogo.png' height = "42" />
-    </ion-nav-title>
+  </ion-nav-title>
   <ion-content class="padding">
   <!-- start of my cards -->
       <div class="col-md-0">
       <!--Sidebar snippet-->
 
-      Search: <input ng-model="query"><br /><p></p>
+    Search: <input ng-model="query"><br /><p></p>
 	  Card Type: <select ng-model="type">
 		<option value=''></option>
 		<option value=1>LRIG</option>
@@ -35,11 +35,11 @@
   
   
     <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}">
-      <div class="item item-divider"></div>
+      <div class="item item-divider">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
       <div class="item item-body cardsingle {{card.color}}">
-      {{card.set}} -
+<!--       {{card.set}} -
       {{card.number}} |
-           <strong>{{card.name}}</strong>
+           <strong>{{card.name}}</strong> -->
         <div>
 
           {{card.stat}}<br/>

@@ -15,6 +15,29 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$positive:                        #3366FF !default;
+
+// $base-background-color:           #eee !default;
+
+.cardsingle.White{
+	background-color: #FEFEFE;
+}
+.cardsingle.Green{
+	background-color: #C1FFAB;
+}
+.cardsingle.Blue{
+	background-color: #ABE2FF;
+}
+.cardsingle.Red{
+	background-color: #FC6868;
+}
+.cardsingle.Black{
+	background-color: #AAAAAA;
+}
+.cardsingle.Colorless{
+	background-color: #EEEEEE;
+}
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 

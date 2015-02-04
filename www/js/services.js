@@ -49,86 +49,48 @@ angular.module('starter.services', [])
   }
 })
 
-// /**
-//  * A simple example service that returns some data.
-//  */
-// .factory('Friends', function() {
-//   // Might use a resource here that returns a JSON array
-
-//   // Some fake testing data
-//   // Some fake testing data
-//   var friends = [{
-//     id: 0,
-//     name: 'Ben Sparrow',
-//     notes: 'Enjoys drawing things',
-//     face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
-//   }, {
-//     id: 1,
-//     name: 'Max Lynx',
-//     notes: 'Odd obsession with everything',
-//     face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-//   }, {
-//     id: 2,
-//     name: 'Andrew Jostlen',
-//     notes: 'Wears a sweet leather Jacket. I\'m a bit jealous',
-//     face: 'https://pbs.twimg.com/profile_images/491274378181488640/Tti0fFVJ.jpeg'
-//   }, {
-//     id: 3,
-//     name: 'Adam Bradleyson',
-//     notes: 'I think he needs to buy a boat',
-//     face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-//   }, {
-//     id: 4,
-//     name: 'Perry Governor',
-//     notes: 'Just the nicest guy',
-//     face: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg'
-//   }];
-
-
-//   return {
-//     all: function() {
-//       return friends;
-//     },
-//     get: function(friendId) {
-//       // Simple index lookup
-//       return friends[friendId];
-//     }
-//   }
-// })
-
 .factory('Links', function() {
   var links = [{
     id: 0,
-    name: 'Takara Tomy WIXOSS',
+    name: 'Takara TOMY WIXOSS Home Page (Japanese)',
     notes: 'The official card game site',
     link: 'http://www.takaratomy.co.jp/products/wixoss/',
     // img: 'http://selector-wixoss.com/images/common/banners/bnr_WIXOSS.png'
     img: 'https://pbs.twimg.com/profile_images/1061207754/T___normal.gif'
   }, {
     id: 1,
-    name: 'Selected Infector WIXOSS Anime',
-    notes: 'Site for the anime',
+    name: 'WIXOSS TV Anime Home Page (Japanese)',
+    notes: 'The official site for the anime',
     link: 'http://selector-wixoss.com/',
     // img: 'http://selector-wixoss.com/images/common/banners/bnr_infected.png'
     img: 'http://selector-wixoss.com/favicon.ico'
   }, {
     id: 2,
-    name: 'Tamayorihime',
-    notes: 'BATORU',
-    link: 'http://selector-wixoss.com/',
-    img: 'http://selector-wixoss.com/present/icon06.png'
+    name: 'WIXOSS TCG Official Twitter (Japanese)',
+    notes: 'The official game account',
+    link: 'https://twitter.com/wixoss_TCG',
+    img: 'https://pbs.twimg.com/profile_images/435316672744792064/hEI_FUmU.jpeg'
   }, {
     id: 3,
-    name: 'Yuzuki',
-    notes: 'Bro Lover',
-    link: 'http://selector-wixoss.com/',
-    img: 'http://selector-wixoss.com/present/icon04.png'
+    name: 'Selector Battle with WIXOSS Phone Application Home Page (Japanese)',
+    notes: 'The official game app site',
+    link: 'https://selector-app.com/',
+    img: 'https://pbs.twimg.com/profile_images/519041308849995776/KmviWOer.jpeg'
   }, {
     id: 4,
-    name: 'Ruuko',
-    notes: 'Just wants to make friends',
-    link: 'http://selector-wixoss.com/',
+    name: 'Selector wikia WIXOSS (English)',
+    notes: 'Unofficial wiki site',
+    link: 'http://selector-wixoss.wikia.com/wiki/WIXOSS',
+    img: 'http://selector-wixoss.com/present/icon06.png'
+  }, {
+    id: 5,
+    name: 'The Draw Phase (English)',
+    notes: 'Unofficial translation blog',
+    link: 'https://thedrawphase.wordpress.com/',
     img: 'http://selector-wixoss.com/present/icon01.png'
+
+
+
   }];
 
 

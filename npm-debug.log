@@ -1,0 +1,225 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'gulp' ]
+2 info using npm@2.2.0
+3 info using node@v0.10.32
+4 silly cache add args [ 'gulp', null ]
+5 verbose cache add spec gulp
+6 silly cache add parsed spec { raw: 'gulp',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'gulp',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed gulp@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+11 silly mapToRegistry name gulp
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/gulp
+15 verbose addNameRange registry:https://registry.npmjs.org/gulp not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/gulp
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 01:28:19
+19 verbose request id 540885304d2d250b
+20 verbose etag "46SDFSJ4PXMPEJCPO47NL6YXB"
+21 http request GET https://registry.npmjs.org/gulp
+22 http 304 https://registry.npmjs.org/gulp
+23 silly get cb [ 304,
+23 silly get   { date: 'Wed, 04 Feb 2015 09:28:20 GMT',
+23 silly get     server: 'Apache',
+23 silly get     via: '1.1 varnish',
+23 silly get     'last-modified': 'Wed, 04 Feb 2015 09:28:20 GMT',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     etag: '"46SDFSJ4PXMPEJCPO47NL6YXB"',
+23 silly get     age: '9',
+23 silly get     'x-served-by': 'cache-sjc3122-SJC',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1423042100.296249,VS0,VE0',
+23 silly get     vary: 'Accept',
+23 silly get     'content-length': '0',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose etag https://registry.npmjs.org/gulp from cache
+25 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
+26 silly addNameRange versions [ 'gulp',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.0.3',
+26 silly addNameRange     '0.0.4',
+26 silly addNameRange     '0.0.5',
+26 silly addNameRange     '0.0.7',
+26 silly addNameRange     '0.0.8',
+26 silly addNameRange     '0.0.9',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '1.2.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '2.0.1',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.2.0',
+26 silly addNameRange     '2.3.0',
+26 silly addNameRange     '2.4.0',
+26 silly addNameRange     '2.4.1',
+26 silly addNameRange     '2.6.0',
+26 silly addNameRange     '2.6.1',
+26 silly addNameRange     '2.7.0',
+26 silly addNameRange     '3.0.0',
+26 silly addNameRange     '3.1.1',
+26 silly addNameRange     '3.1.2',
+26 silly addNameRange     '3.1.3',
+26 silly addNameRange     '3.1.4',
+26 silly addNameRange     '3.2.0',
+26 silly addNameRange     '3.2.1',
+26 silly addNameRange     '3.2.2',
+26 silly addNameRange     '3.2.3',
+26 silly addNameRange     '3.2.4',
+26 silly addNameRange     '3.2.5',
+26 silly addNameRange     '3.3.0',
+26 silly addNameRange     '3.3.1',
+26 silly addNameRange     '3.3.2',
+26 silly addNameRange     '3.3.4',
+26 silly addNameRange     '3.4.0',
+26 silly addNameRange     '3.5.0',
+26 silly addNameRange     '3.5.1',
+26 silly addNameRange     '3.5.2',
+26 silly addNameRange     '3.5.5',
+26 silly addNameRange     '3.5.6',
+26 silly addNameRange     '3.6.0',
+26 silly addNameRange     '3.6.1',
+26 silly addNameRange     '3.6.2',
+26 silly addNameRange     '3.7.0',
+26 silly addNameRange     '3.8.0',
+26 silly addNameRange     '3.8.1',
+26 silly addNameRange     '3.8.2',
+26 silly addNameRange     '3.8.3',
+26 silly addNameRange     '3.8.4',
+26 silly addNameRange     '3.8.5',
+26 silly addNameRange     '3.8.6',
+26 silly addNameRange     '3.8.7',
+26 silly addNameRange     '3.8.8',
+26 silly addNameRange     '3.8.9',
+26 silly addNameRange     '3.8.10' ] ]
+27 verbose addNamed gulp@3.8.10
+28 silly addNamed semver.valid 3.8.10
+29 silly addNamed semver.validRange 3.8.10
+30 silly cache afterAdd gulp@3.8.10
+31 verbose afterAdd C:\Users\Glen\AppData\Roaming\npm-cache\gulp\3.8.10\package\package.json not in flight; writing
+32 verbose afterAdd C:\Users\Glen\AppData\Roaming\npm-cache\gulp\3.8.10\package\package.json written
+33 silly install resolved [ { name: 'gulp',
+33 silly install resolved     description: 'The streaming build system',
+33 silly install resolved     version: '3.8.10',
+33 silly install resolved     homepage: 'http://gulpjs.com',
+33 silly install resolved     repository: { type: 'git', url: 'https://github.com/gulpjs/gulp' },
+33 silly install resolved     author:
+33 silly install resolved      { name: 'Fractal',
+33 silly install resolved        email: 'contact@wearefractal.com',
+33 silly install resolved        url: 'http://wearefractal.com/' },
+33 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+33 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion' ],
+33 silly install resolved     bin: { gulp: './bin/gulp.js' },
+33 silly install resolved     man: [ 'gulp.1' ],
+33 silly install resolved     dependencies:
+33 silly install resolved      { archy: '^1.0.0',
+33 silly install resolved        chalk: '^0.5.0',
+33 silly install resolved        deprecated: '^0.0.1',
+33 silly install resolved        'gulp-util': '^3.0.0',
+33 silly install resolved        interpret: '^0.3.2',
+33 silly install resolved        liftoff: '^0.13.2',
+33 silly install resolved        minimist: '^1.1.0',
+33 silly install resolved        orchestrator: '^0.3.0',
+33 silly install resolved        'pretty-hrtime': '^0.2.0',
+33 silly install resolved        semver: '^4.1.0',
+33 silly install resolved        tildify: '^1.0.0',
+33 silly install resolved        v8flags: '^1.0.1',
+33 silly install resolved        'vinyl-fs': '^0.3.0' },
+33 silly install resolved     devDependencies:
+33 silly install resolved      { coveralls: '^2.7.0',
+33 silly install resolved        'graceful-fs': '^3.0.0',
+33 silly install resolved        istanbul: '^0.3.0',
+33 silly install resolved        jshint: '^2.5.0',
+33 silly install resolved        'jshint-stylish': '^1.0.0',
+33 silly install resolved        'marked-man': '^0.1.3',
+33 silly install resolved        mkdirp: '^0.5.0',
+33 silly install resolved        mocha: '^2.0.1',
+33 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+33 silly install resolved        q: '^1.0.0',
+33 silly install resolved        rimraf: '^2.2.5',
+33 silly install resolved        should: '^4.0.0' },
+33 silly install resolved     scripts:
+33 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+33 silly install resolved        lint: 'jshint lib bin index.js --reporter node_modules/jshint-stylish/stylish.js --exclude node_modules',
+33 silly install resolved        test: 'npm run-script lint && mocha --reporter spec',
+33 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+33 silly install resolved     engineStrict: true,
+33 silly install resolved     engines: { node: '>= 0.9' },
+33 silly install resolved     licenses: [ [Object] ],
+33 silly install resolved     gitHead: '0203bccdc7397991da68ea3e51fef7b2df75a46f',
+33 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+33 silly install resolved     _id: 'gulp@3.8.10',
+33 silly install resolved     _shasum: 'bfb8fc156be97820f02a7f8b3af61a86666f9e31',
+33 silly install resolved     _from: 'gulp@*',
+33 silly install resolved     _npmVersion: '2.1.6',
+33 silly install resolved     _nodeVersion: '0.10.33',
+33 silly install resolved     _npmUser: { name: 'fractal', email: 'contact@wearefractal.com' },
+33 silly install resolved     maintainers: [ [Object] ],
+33 silly install resolved     dist:
+33 silly install resolved      { shasum: 'bfb8fc156be97820f02a7f8b3af61a86666f9e31',
+33 silly install resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz' },
+33 silly install resolved     directories: {},
+33 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.8.10.tgz',
+33 silly install resolved     readme: 'ERROR: No README data found!' } ]
+34 info install gulp@3.8.10 into c:\Program Files\nodejs
+35 info installOne gulp@3.8.10
+36 verbose installOne of gulp to c:\Program Files\nodejs not in flight; installing
+37 verbose lock using C:\Users\Glen\AppData\Roaming\npm-cache\_locks\gulp-e91f9e38bb5afd16.lock for c:\Program Files\nodejs\node_modules\gulp
+38 silly install write writing gulp 3.8.10 to c:\Program Files\nodejs\node_modules\gulp
+39 silly cache addNamed cb gulp@3.8.10
+40 verbose unbuild node_modules\gulp
+41 verbose gentlyRm vacuuming c:\Program Files\nodejs\node_modules\gulp
+42 verbose tar unpack C:\Users\Glen\AppData\Roaming\npm-cache\gulp\3.8.10\package.tgz
+43 verbose tar unpacking to c:\Program Files\nodejs\node_modules\gulp
+44 verbose gentlyRm vacuuming c:\Program Files\nodejs\node_modules\gulp
+45 silly gunzTarPerm modes [ '777', '666' ]
+46 error tar.unpack untar error C:\Users\Glen\AppData\Roaming\npm-cache\gulp\3.8.10\package.tgz
+47 verbose unlock done using C:\Users\Glen\AppData\Roaming\npm-cache\_locks\gulp-e91f9e38bb5afd16.lock for c:\Program Files\nodejs\node_modules\gulp
+48 verbose fstream_path c:\Program Files\nodejs\node_modules\gulp
+49 verbose fstream_type Directory
+50 verbose fstream_class DirWriter
+51 verbose stack Error: EPERM, mkdir 'c:\Program Files\nodejs\node_modules\gulp'
+52 verbose fstream_stack c:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\dir-writer.js:36:23
+52 verbose fstream_stack c:\Program Files\nodejs\node_modules\npm\node_modules\mkdirp\index.js:46:53
+52 verbose fstream_stack Object.oncomplete (fs.js:107:15)
+53 verbose cwd c:\Users\Glen\git\Selector-E-Ionic
+54 error Windows_NT 6.2.9200
+55 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "gulp"
+56 error node v0.10.32
+57 error npm  v2.2.0
+58 error path c:\Program Files\nodejs\node_modules\gulp
+59 error code EPERM
+60 error errno 50
+61 error Error: EPERM, mkdir 'c:\Program Files\nodejs\node_modules\gulp'
+61 error  { [Error: EPERM, mkdir 'c:\Program Files\nodejs\node_modules\gulp']
+61 error   errno: 50,
+61 error   code: 'EPERM',
+61 error   path: 'c:\\Program Files\\nodejs\\node_modules\\gulp',
+61 error   fstream_type: 'Directory',
+61 error   fstream_path: 'c:\\Program Files\\nodejs\\node_modules\\gulp',
+61 error   fstream_class: 'DirWriter',
+61 error   fstream_stack:
+61 error    [ 'c:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\fstream\\lib\\dir-writer.js:36:23',
+61 error      'c:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\mkdirp\\index.js:46:53',
+61 error      'Object.oncomplete (fs.js:107:15)' ] }
+62 error Please try running this command again as root/Administrator.
+63 verbose exit [ 50, true ]
+64 verbose unbuild node_modules\gulp
+65 verbose gentlyRm vacuuming c:\Program Files\nodejs\node_modules\gulp
