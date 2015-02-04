@@ -7,39 +7,53 @@
       <div class="col-md-0">
       <!--Sidebar snippet-->
 
-    Search: <input ng-model="query"><br /><p></p>
-	  Card Type: <select ng-model="type">
-		<option value=''></option>
-		<option value=1>LRIG</option>
-		<option value=2>Arts</option>
-		<option value=3>Signi</option>
-		<option value=4>Spell</option>
-		</select>
-	  Color: <select ng-model="color">
-		<option value=''></option>
-		<option value='White'>White</option>
-		<option value='Red'>Red</option>
-		<option value='Blue'>Blue</option>
-		<option value='Green'>Green</option>
-		<option value='Black'>Black</option>
-		<option value='Colorless'>Colorless</option>
-		</select>
-	  Set: <select ng-model="set">
-		<option value=""></option>
-		<option value="wx01">WX01-Served Selector</option>
-		<option value="wx02">WX02-Stirred Selector</option>
-		</select><p></p>
+    <div class="row">
+      <div class="col col-20">Search: </div>
+      <div class="col"><input ng-model="query"></div>
     </div>
-  
-  
+	  <div class="row">
+      <div class="col col-20">Type:</div>
+      <div class="col">
+        <select ng-model="type">
+    		<option value=''>All</option>
+    		<option value=1>LRIG</option>
+    		<option value=2>Arts</option>
+    		<option value=3>Signi</option>
+    		<option value=4>Spell</option>
+    		</select>
+      </div>
+    
+	  <div class="col">Color: </div>
+      <div class="col">
+        <select ng-model="color">
+    		<option value=''>All</option>
+    		<option value='White'>White</option>
+    		<option value='Red'>Red</option>
+    		<option value='Blue'>Blue</option>
+    		<option value='Green'>Green</option>
+    		<option value='Black'>Black</option>
+    		<option value='Colorless'>Colorless</option>
+    		</select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-20"> Set: </div>
+      <div class="col"> 
+    	  <select ng-model="set">
+    		<option value="">All current sets</option>
+    		<option value="wx01">WX01-Served Selector</option>
+    		<option value="wx02">WX02-Stirred Selector</option>
+    		</select>
+      </div>
+    </div>
+    </div>
     <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}"  >
-      <div class="item item-divider">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
-      <div class="item item-body cardsingle {{card.color}} ng-click="toggleGroup(group)"
-          ng-class="{active: isGroupShown(group)}"">
+      <div class="item item-divider carddivider {{card.color}}" ng-click="toggleGroup(card)" ng-class="{active: isGroupShown(card)}">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
+      <div class="item item-body cardsingle {{card.color}}" ng-show="isGroupShown(card)">
 <!--       {{card.set}} -
       {{card.number}} |
            <strong>{{card.name}}</strong> -->
-        <div>{{card.stat}}<br/>
+        <div >{{card.stat}}<br/>
         </div>
           {{card.cardText}}
       </div>

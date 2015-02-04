@@ -5,7 +5,16 @@ angular.module('starter.controllers', [])
   $scope.color = '';
   $scope.cards = APP.cards;
 
-
+  $scope.toggleGroup = function(card) {
+    if ($scope.isGroupShown(card)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = card;
+    }
+  };
+  $scope.isGroupShown = function(card) {
+    return $scope.shownGroup === card;
+  }
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

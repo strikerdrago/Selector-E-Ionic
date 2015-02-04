@@ -27,6 +27,6 @@ angular.module('starter', ['ionic'])
 	};
 	$scope.isGroupShown = function(card) {
 	  return $scope.shownGroup === card;
-	};
+	}
 
 });

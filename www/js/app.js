@@ -21,9 +21,11 @@ var APP = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
   });
 })
 
+
 .config(function($ionicConfigProvider) {
   $ionicConfigProvider.navBar.alignTitle("center");
   $ionicConfigProvider.tabs.position("bottom");
+  $ionicConfigProvider.views.transition("ios");
   
 })
 

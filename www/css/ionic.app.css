@@ -14,23 +14,26 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-.cardsingle.White {
+.carddivider.White, .cardsingle.White {
   background-color: #FEFEFE; }
 
-.cardsingle.Green {
+.carddivider.Green, .cardsingle.Green {
   background-color: #C1FFAB; }
 
-.cardsingle.Blue {
+.carddivider.Blue, .cardsingle.Blue {
   background-color: #ABE2FF; }
 
-.cardsingle.Red {
+.carddivider.Red, .cardsingle.Red {
   background-color: #FC6868; }
 
-.cardsingle.Black {
+.carddivider.Black, .cardsingle.Black {
   background-color: #AAAAAA; }
 
-.cardsingle.Colorless {
+.carddivider.Colorless, .cardsingle.Colorless {
   background-color: #EEEEEE; }
+
+select {
+  width: 100%; }
 
 .list .item.item-accordion {
   line-height: 38px;
