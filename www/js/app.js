@@ -130,7 +130,7 @@ var APP = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
 });
 
 //some models for all controllers
-
+//DON'T USE THIS ANYMORE
 APP.cards = [
     {'set': 'WX01', 
     'number': '001' ,

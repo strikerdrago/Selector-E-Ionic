@@ -3,16 +3,21 @@ angular.module('starter.controllers', [])
 .controller('HomeCtrl', function($scope, Cards) {
   $scope.type = '';
   $scope.color = '';
-  $scope.cards = APP.cards;
+  $scope.cardsOld = APP.cards;
   $scope.condensed = APP.condensed;
 
-  $scope.cardstest = Cards.all();
+  $scope.cards = Cards.all();
 
   $scope.notCondensed = function(){
     $scope.condense = true;
   }
   $scope.isCondensed = "isGroupShown(card)";
 
+  $scope.setCard = function(cardId, favorite) {
+    if (Cards.get(cardId).favorite == 0)
+    Cards.set(cardId, 1);
+  console.log(Cards.get(cardId).favorite)
+  }
 
   $scope.toggleGroup = function(card) {
     if ($scope.isGroupShown(card)) {
