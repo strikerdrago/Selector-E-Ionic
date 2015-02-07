@@ -1,10 +1,13 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {
+.controller('HomeCtrl', function($scope, Cards) {
   $scope.type = '';
   $scope.color = '';
   $scope.cards = APP.cards;
   $scope.condensed = APP.condensed;
+
+  $scope.cardstest = Cards.all();
+
   $scope.notCondensed = function(){
     $scope.condense = true;
   }

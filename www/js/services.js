@@ -49,6 +49,75 @@ angular.module('starter.services', [])
   }
 })
 
+.factory('Cards', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var cards = [{
+    id: 0,
+    set: 'WX01', 
+    number: '001' ,
+    name: 'Maiden of the Sun, Tamayorihime' ,
+    type: 1,
+    color: 'White',
+    stat: 'LRIG / White / Level: 4 / Limit: 11 / Tama / Grow Cost: [W][W][W]',
+    cardText: '[Activate][W]Discard 1 White Signi from hand: Return 1 of your opponent’s Signi back to hand.'
+  }, {
+    id: 1,
+    set: 'WX01', 
+    number: '001' ,
+    name: 'Maiden of the Sun, Tamayorihime' ,
+    type: 1,
+    color: 'White',
+    stat: 'LRIG / White / Level: 4 / Limit: 11 / Tama / Grow Cost: [W][W][W]',
+    cardText: '[Activate][W]Discard 1 White Signi from hand: Return 1 of your opponent’s Signi back to hand.'
+  }, {
+    id: 2,
+    set: 'WX01', 
+    number: '001' ,
+    name: 'Maiden of the Sun, Tamayorihime' ,
+    type: 1,
+    color: 'White',
+    stat: 'LRIG / White / Level: 4 / Limit: 11 / Tama / Grow Cost: [W][W][W]',
+    cardText: '[Activate][W]Discard 1 White Signi from hand: Return 1 of your opponent’s Signi back to hand.'
+  }, {
+    id: 3,
+    set: 'WX01', 
+    number: '001' ,
+    name: 'Maiden of the Sun, Tamayorihime' ,
+    type: 1,
+    color: 'White',
+    stat: 'LRIG / White / Level: 4 / Limit: 11 / Tama / Grow Cost: [W][W][W]',
+    cardText: '[Activate][W]Discard 1 White Signi from hand: Return 1 of your opponent’s Signi back to hand.'
+  }, {
+    id: 4,
+    set: 'WX01', 
+    number: '001' ,
+    name: 'Maiden of the Sun, Tamayorihime' ,
+    type: 1,
+    color: 'White',
+    stat: 'LRIG / White / Level: 4 / Limit: 11 / Tama / Grow Cost: [W][W][W]',
+    cardText: '[Activate][W]Discard 1 White Signi from hand: Return 1 of your opponent’s Signi back to hand.'
+  }];
+
+  return {
+    all: function() {
+      return cards;
+    },
+    remove: function(card) {
+      cards.splice(cards.indexOf(chat), 1);
+    },
+    get: function(cardId) {
+      for (var i = 0; i < cards.length; i++) {
+        if (cards[i].id === parseInt(cardId)) {
+          return cards[i];
+        }
+      }
+      return null;
+    }
+  }
+})
+
 .factory('Links', function() {
   var links = [{
     id: 0,
