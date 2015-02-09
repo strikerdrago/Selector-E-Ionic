@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
   $scope.type = '';
   $scope.color = '';
   $scope.cardsOld = APP.cards;
-  $scope.condensed = APP.condensed;
+  $scope.condensed = false;
 
   $scope.cards = Cards.all();
 
@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
     }
   };
   $scope.isGroupShown = function(card) {
-    if (APP.condensed == false){
+    if ($scope.condensed == false){
       return $scope.shownGroup === card;
     }
     else {
@@ -39,18 +39,18 @@ angular.module('starter.controllers', [])
     }
   }
 
-  $scope.settings = {
-    enableCondensed: APP.condensed
-  }
+  // $scope.settings = {
+  //   enableCondensed: APP.condensed
+  // }
 
    $scope.condenser = function() {
-    if (APP.condensed == false) {
-      APP.condensed = true;
+    if ($scope.condensed == false) {
+      $scope.condensed = true;
 
     } else{
-      APP.condensed = false;
+      $scope.condensed = false;
     }
-    return APP.condensed;
+    return $scope.condensed;
   }
 })
 

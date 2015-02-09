@@ -74,7 +74,15 @@ var APP = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
         }
       }
     })
-
+  .state('tab.favorites', {
+    url: '/favorites',
+    views: {
+      'tab-favorites': {
+        templateUrl: 'templates/tab-favorites.html',
+        controller: 'HomeCtrl'
+      }
+    }
+  })
   .state('tab.friends', {
       url: '/friends',
       views: {

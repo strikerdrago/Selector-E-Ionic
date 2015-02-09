@@ -91,6 +91,13 @@ select{
 	padding-top: 10px;
 }
 
+.tab-item{
+	// margin-top: 2px;
+}
+.tab-item-active{
+	// margin-top: 2px;
+}
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
