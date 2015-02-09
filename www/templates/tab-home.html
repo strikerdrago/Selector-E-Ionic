@@ -65,7 +65,7 @@
           {{card.cardText}}
           <br/>
           <label class="checkbox checkbox-balanced">
-          <input type="checkbox" ng-click="setCard(card.id, card.favorite)"></label>
+          <input type="checkbox" ng-checked="card.favorite == 1" ng-click="setCard(card.id, card.favorite)"></label>
           <span class="favorite">Favorite</span>
 
       </div>
