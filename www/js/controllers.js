@@ -16,6 +16,9 @@ angular.module('starter.controllers', [])
   $scope.setCard = function(cardId, favorite) {
     if (Cards.get(cardId).favorite == 0)
     Cards.set(cardId, 1);
+    else {
+      Cards.set(cardId, 0);
+    }
   console.log(Cards.get(cardId).favorite)
   }
 
@@ -30,7 +33,6 @@ angular.module('starter.controllers', [])
   $scope.isGroupShown = function(card) {
     if (APP.condensed == false){
       return $scope.shownGroup === card;
-       
     }
     else {
       return true;

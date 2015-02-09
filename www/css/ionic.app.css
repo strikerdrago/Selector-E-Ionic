@@ -40,17 +40,19 @@ select {
 
 .list .item.item-accordion {
   transition: 0.09s all linear;
-  overflow: auto; }
+  overflow: auto;
+  opacity: 100; }
 
 .list .item.item-accordion.ng-hide {
-  line-height: 0px; }
+  line-height: 0px;
+  opacity: 0; }
 
 .list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
   display: block !important; }
 
 .list.ng-enter, .list.ng-leave {
-  -webkit-transition: 150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-  transition: 150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all; }
+  -webkit-transition: 175ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 175ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all; }
 
 .list.ng-enter {
   left: 100%; }
@@ -63,6 +65,12 @@ select {
 
 .list.ng-leave.ng-leave-active {
   left: -100%; }
+
+.newline {
+  margin-left: 4.68em; }
+
+.item-toggle.item {
+  padding-top: 10px; }
 
 /*!
   Ionicons, v1.5.2

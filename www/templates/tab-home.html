@@ -62,11 +62,12 @@
 
 
     <div class="list card" ng-repeat="card in cards | filter:query | filter:set | filter:{type: type} | filter:{color: color}">
-      <div class="item item-divider carddivider {{card.color}}" ng-click="toggleGroup(card)" ng-class="{active: isGroupShown(card)}">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong></div>
+      <div class="item item-divider carddivider {{card.color}}" ng-click="toggleGroup(card)" ng-class="{active: isGroupShown(card)}">{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong><br/><span class="newline"> | {{card.jName}}</span></div>
       <div class="item item-body item-accordion cardsingle {{card.color}}" ng-show="isGroupShown(card)">
         <div >{{card.stat}}<br/>
         </div>
           {{card.cardText}}
+          <br/>
           Is favorite: {{card.favorite}}
         
         <button ng-click="setCard(card.id, card.favorite)" >Favorite</button>

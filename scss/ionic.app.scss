@@ -49,9 +49,11 @@ select{
 .list .item.item-accordion {
   transition: 0.09s all linear;
   overflow: auto;
+  opacity: 100;
 }
 .list .item.item-accordion.ng-hide {
   line-height: 0px;
+  opacity: 0;
 }
 .list .item.item-accordion.ng-hide-add,
 .list .item.item-accordion.ng-hide-remove {
@@ -60,8 +62,8 @@ select{
 
 .list.ng-enter,
 .list.ng-leave {
-  -webkit-transition:150ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  transition:150ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -webkit-transition:175ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition:175ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
 }
 
 .list.ng-enter{
@@ -79,6 +81,14 @@ select{
 
 .list.ng-leave.ng-leave-active {
 	left:-100%;
+}
+
+.newline{
+	margin-left: 4.68em;
+}
+
+.item-toggle.item{
+	padding-top: 10px;
 }
 
 // The path for our ionicons font files, relative to the built CSS in www/css
