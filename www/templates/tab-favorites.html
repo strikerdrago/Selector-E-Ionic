@@ -1,12 +1,9 @@
 <ion-view title='<img class="title-image title-center" src="img/selectorelogo.png" height = "42" />'>
-<!--   <ion-nav-title>
-      <img class src='img/selectorelogo.png' height = "42" />
-  </ion-nav-title> -->
   <ion-content class="padding">
   <!-- start of my cards -->
       
 
-    <ion-list>
+    <ion-list ng-show="filtered.length">
       <ion-item  class="item-toggle">
         Expand all
         <label class="toggle">
@@ -19,17 +16,24 @@
     </ion-list>
 
 
-    <div class="list card" ng-repeat="card in cards" ng-show="card.favorite == 1">
+    <div class="list card" ng-repeat="card in cards | filter:{favorite: favorite} as filtered">
+      
+
       <div class="item item-divider carddivider {{card.color}}" ng-click="toggleGroup(card)" ng-class="{active: isGroupShown(card)}" >{{card.set}} - {{card.number}} | <strong>{{card.name}}</strong><br/><span class="newline"> | {{card.jName}}</span></div>
       <div class="item item-body item-accordion cardsingle {{card.color}}" ng-show="isGroupShown(card)">
         <div >{{card.stat}}<br/>
         </div>
           {{card.cardText}}
           <br/>
-          Is favorite: {{card.favorite}}
-          <div ng-show="card.favorite == 1">STAR</div>
-        
-        <button ng-click="setCard(card.id, card.favorite)" >Favorite</button>
+        <label class="checkbox checkbox-energized">
+        <input type="checkbox" ng-click="setCard(card.id, card.favorite)"></label>
+        <span class="favorite">Favorite</span>
+      </div>
+
+    </div>
+    <div class="card" ng-hide="filtered.length">
+      <div class="item item-text-wrap">
+        <span>You have no cards favorited. Pick some you like!</span>
       </div>
     </div>
     

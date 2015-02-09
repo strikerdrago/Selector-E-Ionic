@@ -3,25 +3,26 @@ angular.module('starter.controllers', [])
 .controller('HomeCtrl', function($scope, Cards) {
   $scope.type = '';
   $scope.color = '';
-  $scope.cardsOld = APP.cards;
+  $scope.favorite = 1;
   $scope.condensed = false;
+  // $scope.faviconclass = "icon ion-ios7-star-outline button";
 
   $scope.cards = Cards.all();
 
-  $scope.notCondensed = function(){
-    $scope.condense = true;
-  }
-  $scope.isCondensed = "isGroupShown(card)";
 
   $scope.setCard = function(cardId, favorite) {
-    if (Cards.get(cardId).favorite == 0)
-    Cards.set(cardId, 1);
+    if (Cards.get(cardId).favorite == 0){
+      Cards.set(cardId, 1);
+      // $scope.faviconclass = "icon ion-ios7-star button button-energized";
+    }
     else {
       Cards.set(cardId, 0);
+      // $scope.faviconclass = "icon ion-ios7-star-outline button";
     }
-  console.log(Cards.get(cardId).favorite)
   }
 
+  // toggles the group based on this thread: 
+  // http://forum.ionicframework.com/t/accordion-list/2832
   $scope.toggleGroup = function(card) {
     if ($scope.isGroupShown(card)) {
       $scope.shownGroup = null;
@@ -39,9 +40,11 @@ angular.module('starter.controllers', [])
     }
   }
 
-  // $scope.settings = {
-  //   enableCondensed: APP.condensed
-  // }
+  // expand all functions
+  $scope.notCondensed = function(){
+    $scope.condense = true;
+  }
+  $scope.isCondensed = "isGroupShown(card)";
 
    $scope.condenser = function() {
     if ($scope.condensed == false) {

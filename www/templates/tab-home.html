@@ -4,8 +4,6 @@
   </ion-nav-title> -->
   <ion-content class="padding">
   <!-- start of my cards -->
-      <div class="col-md-0">
-      <!--Sidebar snippet-->
 
     <div class="row">
       <div class="col col-20">Search: </div>
@@ -51,7 +49,7 @@
     <ion-list>
       <ion-item  class="item-toggle">
         Expand all
-        <label class="toggle">
+        <label class="toggle toggle-balanced">
           <input type="checkbox" ng-model="settings.enableCondensed" ng-change="condenser()">
           <div class="track">
             <div class="handle"></div>
@@ -68,9 +66,10 @@
         </div>
           {{card.cardText}}
           <br/>
-          Is favorite: {{card.favorite}}
-        
-        <button ng-click="setCard(card.id, card.favorite)" >Favorite</button>
+          <label class="checkbox checkbox-energized">
+          <input type="checkbox" ng-click="setCard(card.id, card.favorite)"></label>
+          <span class="favorite">Favorite</span>
+
       </div>
     </div>
     

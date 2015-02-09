@@ -35,6 +35,9 @@ body {
 .carddivider.Colorless, .cardsingle.Colorless {
   background-color: #EEEEEE; }
 
+label.checkbox.checkbox-energized {
+  top: 12px; }
+
 select {
   width: 100%; }
 
@@ -71,6 +74,12 @@ select {
 
 .item-toggle.item {
   padding-top: 10px; }
+
+.favicon-normal {
+  background-color: grey; }
+
+.favicon-bright {
+  background-color: yellow; }
 
 /*!
   Ionicons, v1.5.2
@@ -7072,3 +7081,7 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.testemphasis {
+  font-size: 200px;
+  font-style: italic; }

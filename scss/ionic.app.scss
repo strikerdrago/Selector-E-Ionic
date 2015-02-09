@@ -42,6 +42,10 @@ body {
 	background-color: #EEEEEE;
 }
 
+label.checkbox.checkbox-energized{
+	top:12px;
+}
+
 select{
 	width:100%;
 }
@@ -98,9 +102,22 @@ select{
 	// margin-top: 2px;
 }
 
+.favicon-normal{
+	background-color: grey;
+}
+.favicon-bright{
+	background-color: yellow;
+}
+
+
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.testemphasis{
+	font-size: 200px;
+	font-style: italic;
+}
