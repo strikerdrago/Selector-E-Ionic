@@ -1,10 +1,8 @@
-<ion-view title='<img class="title-image title-center" src="img/selectorelogo.png" height = "42" />'>
-<!--   <ion-nav-title>
-      <img class src='img/selectorelogo.png' height = "42" />
-  </ion-nav-title> -->
-  <ion-content class="padding">
-  <!-- start of my cards -->
+<!-- start of my home page -->
 
+<ion-view title='<img class="title-image title-center" src="img/selectorelogo.png" height = "42" />'>
+  <ion-content class="padding">
+  
     <div class="row">
       <div class="col col-20">Search: </div>
       <div class="col"><input ng-model="query"></div>
@@ -66,7 +64,7 @@
         </div>
           {{card.cardText}}
           <br/>
-          <label class="checkbox checkbox-energized">
+          <label class="checkbox checkbox-balanced">
           <input type="checkbox" ng-click="setCard(card.id, card.favorite)"></label>
           <span class="favorite">Favorite</span>
 
